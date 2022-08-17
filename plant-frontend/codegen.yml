@@ -1,0 +1,15 @@
+overwrite: true
+schema:
+  - 'https://graphql.contentful.com/content/v1/spaces/51s10dmfl6an':
+      headers:
+        Authorization: 'Bearer INSERT_CORRECT_TOKEN'
+documents: operations/**/*.gql
+generates:
+  generated/graphql.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+  ./graphql.schema.json:
+    plugins:
+      - introspection

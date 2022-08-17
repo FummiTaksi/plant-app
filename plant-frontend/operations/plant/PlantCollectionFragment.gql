@@ -1,0 +1,11 @@
+fragment PlantCollection on PlantCollection {
+  items {
+    title
+    description
+    acquired
+    image {
+      title
+      url
+    }
+  }
+}

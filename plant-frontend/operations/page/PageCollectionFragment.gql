@@ -1,0 +1,8 @@
+fragment PageCollection on PageCollection {
+  items {
+    image {
+      title
+      url
+    }
+  }
+}
