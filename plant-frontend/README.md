@@ -33,4 +33,6 @@ yarn types:check
 
 #### Typescript generation
 
+Insert correct Bearer token to `codegen.yml` and run
+
 `yarn gql:generate`
